@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="2027年 コダマ家旅行計画。絶景とご当地グルメを楽しむ2泊3日の家族旅行候補を比較できます。">
+  <meta name="theme-color" content="#0f5f63">
+  <title>2027年 コダマ家旅行計画</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="#top" class="brand" aria-label="トップへ戻る">
+        <span class="brand-name">2027年 コダマ家旅行計画</span>
+        <span class="brand-subtitle">絶景とご当地グルメをめぐる、2泊3日の旅</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">メニューを開く</span>
+      </button>
+
+      <nav class="global-nav" id="global-nav" aria-label="メインナビゲーション">
+        <a href="#map">地図から選ぶ</a>
+        <a href="#destinations">候補地</a>
+        <a href="compare.html">比較</a>
+        <a href="#conditions">旅行条件</a>
+        <a href="vote.html">投票</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    
+<section class="hero hero-final" aria-labelledby="hero-title">
+  <div class="hero-photo" aria-hidden="true"></div>
+  <div class="hero-shade" aria-hidden="true"></div>
+
+  <div class="hero-final-inner">
+    <div class="hero-copy">
+<h1 id="hero-title">絶景とご当地グルメ<br><span>をめぐる、2泊3日の旅。</span></h1>
+      <p class="hero-lead">8つの候補地から、2027年の旅先を選びます。</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#map">日本地図から選ぶ</a>
+        <a class="button button-ghost" href="compare.html">8候補地を比較</a>
+      </div>
+    </div>
+</div>
+</section>
+
+<section class="map-section section" id="map">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div>
+            
+            <h2>日本地図から地方を選ぶ</h2>
+          </div>
+          <p>地方をタップすると、その地域の候補地だけを表示します。</p>
+        </div>
+
+        <div class="map-layout">
+          <div class="japan-map-card">
+            <div class="map-toolbar">
+              <span id="map-status">全国の候補地を表示中</span>
+              <button id="reset-map" type="button">全国表示に戻す</button>
+            </div>
+
+            <svg class="japan-map" viewBox="0 0 760 560" role="img" aria-labelledby="map-title map-desc">
+              <title id="map-title">地方を選択できる日本地図</title>
+              <desc id="map-desc">北海道、東北、関東、中部、近畿、中国、四国、九州を選択できます。</desc>
+
+              <g class="map-region disabled" data-region="hokkaido" tabindex="-1" aria-label="北海道地方・現在候補地なし">
+                <path d="M565 45 L690 35 L720 82 L680 126 L590 118 L548 82 Z"></path>
+                <text x="635" y="83">北海道</text>
+              </g>
+
+              <g class="map-region disabled" data-region="tohoku" tabindex="-1" aria-label="東北地方・現在候補地なし">
+                <path d="M520 130 L612 122 L630 210 L590 254 L520 224 Z"></path>
+                <text x="574" y="188">東北</text>
+              </g>
+
+              <g class="map-region" data-region="kanto" tabindex="0" role="button" aria-label="関東地方">
+                <path d="M505 228 L585 246 L610 306 L555 335 L500 292 Z"></path>
+                <text x="555" y="285">関東</text>
+              </g>
+
+              <g class="map-region" data-region="chubu" tabindex="0" role="button" aria-label="中部地方">
+                <path d="M390 200 L510 214 L510 300 L430 334 L365 286 Z"></path>
+                <text x="442" y="264">中部</text>
+              </g>
+
+              <g class="map-region" data-region="kinki" tabindex="0" role="button" aria-label="近畿地方">
+                <path d="M318 270 L400 282 L421 344 L365 382 L306 337 Z"></path>
+                <text x="363" y="330">近畿</text>
+              </g>
+
+              <g class="map-region" data-region="chugoku" tabindex="0" role="button" aria-label="中国地方">
+                <path d="M180 282 L310 270 L305 344 L188 360 L154 322 Z"></path>
+                <text x="232" y="319">中国</text>
+              </g>
+
+              <g class="map-region" data-region="shikoku" tabindex="0" role="button" aria-label="四国地方">
+                <path d="M236 372 L340 360 L365 408 L270 430 L220 402 Z"></path>
+                <text x="292" y="397">四国</text>
+              </g>
+
+              <g class="map-region" data-region="kyushu" tabindex="0" role="button" aria-label="九州地方">
+                <path d="M70 338 L164 344 L190 410 L150 500 L78 482 L45 420 Z"></path>
+                <text x="118" y="413">九州</text>
+              </g>
+
+              <g class="map-region disabled" data-region="okinawa" tabindex="-1" aria-label="沖縄地方・現在候補地なし">
+                <circle cx="92" cy="528" r="15"></circle>
+                <circle cx="126" cy="514" r="8"></circle>
+                <text x="156" y="528">沖縄</text>
+              </g>
+
+              <g class="map-pin" data-pin="shizuoka" aria-hidden="true">
+                <circle cx="486" cy="307" r="9"></circle>
+              </g>
+              <g class="map-pin" data-pin="ishikawa" aria-hidden="true">
+                <circle cx="405" cy="231" r="9"></circle>
+              </g>
+              <g class="map-pin" data-pin="mie" aria-hidden="true">
+                <circle cx="377" cy="345" r="9"></circle>
+              </g>
+              <g class="map-pin" data-pin="okayama" aria-hidden="true">
+                <circle cx="261" cy="326" r="9"></circle>
+              </g>
+              <g class="map-pin" data-pin="ehime" aria-hidden="true">
+                <circle cx="286" cy="397" r="9"></circle>
+              </g>
+              <g class="map-pin" data-pin="oita" aria-hidden="true">
+                <circle cx="153" cy="383" r="9"></circle>
+              </g>
+              <g class="map-pin" data-pin="miyazaki" aria-hidden="true">
+                <circle cx="143" cy="436" r="9"></circle>
+              </g>
+              <g class="map-pin" data-pin="kagoshima" aria-hidden="true">
+                <circle cx="110" cy="469" r="9"></circle>
+              </g>
+            </svg>
+
+            <p class="map-caption">● は現在の旅行候補地です。地図は選択用の簡易表示です。</p>
+          </div>
+
+          <aside class="map-side">
+            <p class="map-side-kicker">旅行候補 8か所</p>
+            <h3>海、山、温泉、街並み。<br>違いを楽しめる8候補。</h3>
+            <p>
+              静岡から鹿児島まで、レンタカーで周遊しやすく、
+              景色と食を両方楽しめる地域を仮選定しています。
+            </p>
+            <a href="#destinations" class="text-link">候補地を一覧で確認する <span>→</span></a>
+          </aside>
+        </div>
+      </div>
+    </section>
+<section class="destinations-section section" id="destinations">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div>
+            
+            <h2>旅行候補 8か所</h2>
+          </div>
+          <p id="destination-count">8件の候補地を表示中</p>
+        </div>
+
+        <div class="destination-grid" id="destination-grid">
+          <article class="destination-card" data-region="chubu" data-name="静岡" data-scenery="10" data-gourmet="10" data-sweets="8" data-onsen="7" data-drive="9" data-easy="9">
+            <div class="destination-visual visual-shizuoka">
+              <span class="destination-number">01</span>
+              <span class="destination-prefecture">中部</span>
+            </div>
+            <div class="destination-body">
+              <h3>静岡</h3>
+              <p class="destination-tagline">富士山と駿河湾を一度に楽しむ絶景ドライブ。</p>
+              <ul class="tag-list">
+                <li>富士山</li><li>桜えび</li><li>つけナポリタン</li>
+              </ul>
+              <a class="details-button details-link" href="pages/shizuoka.html">静岡の詳細を見る <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card" data-region="chubu" data-name="石川" data-scenery="8" data-gourmet="10" data-sweets="9" data-onsen="7" data-drive="7" data-easy="8">
+            <div class="destination-visual visual-ishikawa">
+              <span class="destination-number">02</span>
+              <span class="destination-prefecture">中部</span>
+            </div>
+            <div class="destination-body">
+              <h3>石川</h3>
+              <p class="destination-tagline">庭園、海景色、伝統文化と海の幸を味わう旅。</p>
+              <ul class="tag-list">
+                <li>兼六園</li><li>海鮮</li><li>金箔スイーツ</li>
+              </ul>
+              <a class="details-button details-link" href="pages/ishikawa.html">石川の詳細を見る <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card" data-region="kinki" data-name="三重" data-scenery="9" data-gourmet="9" data-sweets="9" data-onsen="7" data-drive="9" data-easy="8">
+            <div class="destination-visual visual-mie">
+              <span class="destination-number">03</span>
+              <span class="destination-prefecture">近畿</span>
+            </div>
+            <div class="destination-body">
+              <h3>三重</h3>
+              <p class="destination-tagline">伊勢志摩の海と名物をゆったり巡る王道旅。</p>
+              <ul class="tag-list">
+                <li>英虞湾</li><li>伊勢うどん</li><li>赤福</li>
+              </ul>
+              <a class="details-button details-link" href="pages/mie.html">三重の詳細を見る <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card" data-region="chugoku" data-name="岡山" data-scenery="7" data-gourmet="8" data-sweets="10" data-onsen="5" data-drive="8" data-easy="9">
+            <div class="destination-visual visual-okayama">
+              <span class="destination-number">04</span>
+              <span class="destination-prefecture">中国</span>
+            </div>
+            <div class="destination-body">
+              <h3>岡山</h3>
+              <p class="destination-tagline">穏やかな街並みと果物スイーツを楽しむ旅。</p>
+              <ul class="tag-list">
+                <li>倉敷</li><li>デミカツ丼</li><li>フルーツ</li>
+              </ul>
+              <a class="details-button details-link" href="pages/okayama.html">岡山の詳細を見る <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card" data-region="shikoku" data-name="愛媛" data-scenery="10" data-gourmet="9" data-sweets="9" data-onsen="9" data-drive="10" data-easy="7">
+            <div class="destination-visual visual-ehime">
+              <span class="destination-number">05</span>
+              <span class="destination-prefecture">四国</span>
+            </div>
+            <div class="destination-body">
+              <h3>愛媛</h3>
+              <p class="destination-tagline">しまなみ海道と温泉、ご当地柑橘を満喫。</p>
+              <ul class="tag-list">
+                <li>しまなみ海道</li><li>鯛めし</li><li>みかん</li>
+              </ul>
+              <a class="details-button details-link" href="pages/ehime.html">愛媛の詳細を見る <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card" data-region="kyushu" data-name="大分" data-scenery="9" data-gourmet="9" data-sweets="7" data-onsen="10" data-drive="9" data-easy="8">
+            <div class="destination-visual visual-oita">
+              <span class="destination-number">06</span>
+              <span class="destination-prefecture">九州</span>
+            </div>
+            <div class="destination-body">
+              <h3>大分</h3>
+              <p class="destination-tagline">温泉と高原ドライブ、郷土料理を楽しむ旅。</p>
+              <ul class="tag-list">
+                <li>由布岳</li><li>とり天</li><li>地獄蒸し</li>
+              </ul>
+              <a class="details-button details-link" href="pages/oita.html">大分の詳細を見る <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card" data-region="kyushu" data-name="宮崎" data-scenery="10" data-gourmet="10" data-sweets="9" data-onsen="6" data-drive="10" data-easy="7">
+            <div class="destination-visual visual-miyazaki">
+              <span class="destination-number">07</span>
+              <span class="destination-prefecture">九州</span>
+            </div>
+            <div class="destination-body">
+              <h3>宮崎</h3>
+              <p class="destination-tagline">南国の海岸線と神話の絶景を巡るドライブ。</p>
+              <ul class="tag-list">
+                <li>日南海岸</li><li>チキン南蛮</li><li>マンゴー</li>
+              </ul>
+              <a class="details-button details-link" href="pages/miyazaki.html">宮崎の詳細を見る <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card" data-region="kyushu" data-name="鹿児島" data-scenery="10" data-gourmet="10" data-sweets="9" data-onsen="10" data-drive="9" data-easy="7">
+            <div class="destination-visual visual-kagoshima">
+              <span class="destination-number">08</span>
+              <span class="destination-prefecture">九州</span>
+            </div>
+            <div class="destination-body">
+              <h3>鹿児島</h3>
+              <p class="destination-tagline">桜島を望み、温泉と南国グルメを味わう旅。</p>
+              <ul class="tag-list">
+                <li>桜島</li><li>黒豚</li><li>白熊</li>
+              </ul>
+              <a class="details-button details-link" href="pages/kagoshima.html">鹿児島の詳細を見る <span>→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <p>この地方には現在、候補地がありません。</p>
+          <button type="button" id="empty-reset">全国の候補地を見る</button>
+        </div>
+      </div>
+    </section>
+
+
+<section class="compare-preview section" id="compare">
+  <div class="section-inner">
+    <div class="compare-card">
+      <div>
+        <h2>8つの候補地を見比べる</h2>
+        <p>絶景、名物、スイーツ、移動時間、概算予算を一覧で確認できます。</p>
+      </div>
+      <a class="button button-primary" href="compare.html">比較ページを見る</a>
+    </div>
+  </div>
+</section>
+
+    <section class="conditions-section section" id="conditions">
+      <div class="section-inner">
+        <div class="conditions-card">
+          <div>
+            
+            <h2>今回の旅行条件</h2>
+          </div>
+          <dl class="condition-list">
+            <div><dt>時期</dt><dd>2027年4月中旬〜下旬（GW前）</dd></div>
+            <div><dt>日程</dt><dd>2泊3日</dd></div>
+            <div><dt>人数</dt><dd>大人3人</dd></div>
+            <div><dt>移動</dt><dd>各地域の空港からレンタカー</dd></div>
+            <div><dt>重視</dt><dd>絶景、名物料理、B級グルメ、スイーツ</dd></div>
+</dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="vote-section section" id="vote">
+      <div class="section-inner vote-card">
+        <div>
+          
+          <h2>家族投票は、候補地の詳細完成後に。</h2>
+          <p>
+            第一希望・第二希望・コメントを入力できる投票ページを用意しました。GoogleフォームのURLが決まり次第、そのまま接続できます。
+          </p>
+        </div>
+        <a class="button button-primary" href="vote.html">投票ページを見る</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>2027年 コダマ家旅行計画</strong>
+        <span class="footer-subtitle">絶景とご当地グルメをめぐる、2泊3日の旅</span>
+      </div>
+      <a href="#top">ページ上部へ ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
