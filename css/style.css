@@ -1833,3 +1833,18 @@ body {
     min-width: 0;
   }
 }
+
+
+/* Shizuoka photo edition */
+.shizuoka-photo-hero{background-image:linear-gradient(90deg,rgba(22,48,55,.67),rgba(22,48,55,.16)),url("../images/shizuoka/shizuoka-01-hero.png");background-size:cover;background-position:center 50%;}
+.shizuoka-photo-hero::before,.shizuoka-photo-hero::after{display:none;}
+.shizuoka-photo-hero .detail-hero-inner{position:relative;z-index:2;}
+.shizuoka-photo-hero h1,.shizuoka-photo-hero .detail-hero-lead,.shizuoka-photo-hero .breadcrumb,.shizuoka-photo-hero .breadcrumb a{color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.35);}
+.shizuoka-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+.shizuoka-food-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+.card-photo{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;}
+.shizuoka-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
+.shizuoka-gallery figure{margin:0;background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);}
+.shizuoka-gallery img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;}
+.shizuoka-gallery figcaption{padding:14px 16px;font-weight:700;color:var(--ink);}
+@media(max-width:760px){.shizuoka-photo-hero{background-position:38% center;}.shizuoka-feature-grid,.shizuoka-food-grid,.shizuoka-gallery{grid-template-columns:1fr;}.card-photo,.shizuoka-gallery img{aspect-ratio:16/10;}}
