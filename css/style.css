@@ -1743,3 +1743,93 @@ body {
 .hero-copy {
   max-width: 760px;
 }
+
+
+/* Google Form voting page */
+.vote-form-card-wide {
+  max-width: 1080px;
+}
+.vote-heading {
+  margin-bottom: 28px;
+}
+.vote-heading h2,
+.vote-action-panel h2 {
+  margin: 0 0 8px;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+.vote-heading p,
+.vote-action-panel p {
+  margin: 0;
+  color: var(--muted);
+}
+.vote-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.vote-destination-card {
+  background: #fff8ec;
+  border: 1px solid rgba(239,198,111,.28);
+  border-radius: 18px;
+  padding: 20px;
+}
+.vote-destination-card h3 {
+  margin: 0 0 8px;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 1.4rem;
+}
+.vote-destination-card p {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-weight: 700;
+}
+.vote-destination-card span {
+  display: block;
+  color: var(--muted);
+  font-size: .86rem;
+  line-height: 1.65;
+}
+.vote-destination-card a {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--teal-dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+.vote-action-panel {
+  margin-top: 34px;
+  padding: 28px;
+  border-radius: 20px;
+  background: var(--teal-soft);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.vote-submit-button {
+  flex: 0 0 auto;
+  min-width: 230px;
+}
+.vote-compare-link {
+  display: inline-block;
+  margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+  .vote-destination-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .vote-destination-grid {
+    grid-template-columns: 1fr;
+  }
+  .vote-action-panel {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .vote-submit-button {
+    width: 100%;
+    min-width: 0;
+  }
+}
