@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap");
 
 :root {
   --ink: #183036;
@@ -1877,3 +1878,100 @@ body {
 .destination-photo-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:4px;height:230px;overflow:hidden}
 .destination-photo-grid img{width:100%;height:100%;object-fit:cover;display:block}
 .destination-label{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.45);color:#fff;padding:6px 12px;border-radius:999px;font-weight:700;backdrop-filter:blur(2px)}
+
+/* Softer, pop-style typography */
+:root{
+ --ui-font:"Yu Gothic","Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+}
+body,button,input,select,textarea{
+ font-family: var(--ui-font);
+}
+h1,h2,h3,.brand-name,.destination-label,.button{
+ font-family:"Yu Gothic","Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+ font-weight:700;
+ letter-spacing:.02em;
+}
+
+/* Google Fonts */
+body,button,input,select,textarea{
+  font-family:'Noto Sans JP',sans-serif;
+}
+h1,h2,h3,h4,.brand-name,.brand-subtitle,.destination-label,
+.button,.eyebrow,.hero-map-title{
+  font-family:'M PLUS Rounded 1c',sans-serif;
+  font-weight:700;
+}
+
+
+/* Destination cards: clickable, calm, and refined */
+.destination-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(73, 116, 112, 0.10);
+  transition: none !important;
+}
+
+.destination-card:hover,
+.destination-card:focus-visible {
+  transform: none !important;
+  box-shadow: 0 10px 26px rgba(73, 116, 112, 0.14);
+}
+
+.destination-card:focus-visible {
+  outline: 3px solid rgba(79, 167, 160, 0.42);
+  outline-offset: 3px;
+}
+
+.destination-card .destination-body {
+  padding: 22px 22px 24px;
+}
+
+.destination-card h3 {
+  margin: 0 0 10px;
+}
+
+.destination-card .destination-tagline {
+  margin-bottom: 14px;
+  line-height: 1.75;
+}
+
+.destination-grid {
+  gap: 26px;
+}
+
+.destination-photo-grid {
+  height: 240px;
+  gap: 3px;
+}
+
+.destination-label {
+  left: 12px;
+  bottom: 12px;
+  padding: 7px 14px;
+  background: rgba(22, 48, 54, 0.56);
+  font-size: .95rem;
+  z-index: 2;
+  backdrop-filter: none;
+}
+
+@media (max-width: 760px) {
+  .destination-grid {
+    gap: 18px;
+  }
+
+  .destination-photo-grid {
+    height: 215px;
+  }
+
+  .destination-card .destination-body {
+    padding: 19px 18px 21px;
+  }
+
+  .destination-label {
+    left: 10px;
+    bottom: 10px;
+    font-size: .88rem;
+  }
+}

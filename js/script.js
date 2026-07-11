@@ -103,3 +103,23 @@ window.addEventListener("resize", () => {
   if (window.innerWidth > 760) closeMenu();
 });
 updateHeader();
+
+
+// Make each destination card clickable without adding animation.
+document.querySelectorAll(".destination-card").forEach(card => {
+  const detailLink = card.querySelector(".details-link");
+  if (!detailLink) return;
+
+  const openCard = event => {
+    if (event.target.closest("a, button")) return;
+    window.location.href = detailLink.href;
+  };
+
+  card.addEventListener("click", openCard);
+  card.addEventListener("keydown", event => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      window.location.href = detailLink.href;
+    }
+  });
+});
