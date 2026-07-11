@@ -24,21 +24,23 @@ const emptyReset = document.getElementById("empty-reset");
 const toast = document.getElementById("toast");
 
 function updateHeader() {
-  header.classList.toggle("scrolled", window.scrollY > 24);
+  if (header) header.classList.toggle("scrolled", window.scrollY > 24);
 }
 
 function closeMenu() {
-  nav.classList.remove("open");
-  menuButton.setAttribute("aria-expanded", "false");
+  if (nav) nav.classList.remove("open");
+  if (menuButton) menuButton.setAttribute("aria-expanded", "false");
   document.body.classList.remove("menu-open");
 }
 
-menuButton.addEventListener("click", () => {
-  const open = menuButton.getAttribute("aria-expanded") === "true";
-  menuButton.setAttribute("aria-expanded", String(!open));
-  nav.classList.toggle("open", !open);
-  document.body.classList.toggle("menu-open", !open);
-});
+if (menuButton && nav) {
+  menuButton.addEventListener("click", () => {
+    const open = menuButton.getAttribute("aria-expanded") === "true";
+    menuButton.setAttribute("aria-expanded", String(!open));
+    nav.classList.toggle("open", !open);
+    document.body.classList.toggle("menu-open", !open);
+  });
+}
 
 document.querySelectorAll(".global-nav a").forEach(link => {
   link.addEventListener("click", closeMenu);
@@ -58,15 +60,16 @@ function filterDestinations(region = null) {
   });
 
   if (region) {
-    mapStatus.textContent = `${regionNames[region]}地方の候補地を表示中`;
-    destinationCount.textContent = `${visible}件の候補地を表示中`;
+    if (mapStatus) mapStatus.textContent = `${regionNames[region]}地方の候補地を表示中`;
+    if (destinationCount) destinationCount.textContent = `${visible}件の候補地を表示中`;
   } else {
-    mapStatus.textContent = "全国の候補地を表示中";
-    destinationCount.textContent = `${visible}件の候補地を表示中`;
+    if (mapStatus) mapStatus.textContent = "全国の候補地を表示中";
+    if (destinationCount) destinationCount.textContent = `${visible}件の候補地を表示中`;
   }
 
-  emptyState.hidden = visible !== 0;
-  document.getElementById("destinations").scrollIntoView({ behavior: "smooth", block: "start" });
+  if (emptyState) emptyState.hidden = visible !== 0;
+  const destinations = document.getElementById("destinations");
+  if (destinations) destinations.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 regions.forEach(region => {
@@ -81,12 +84,13 @@ regions.forEach(region => {
   });
 });
 
-resetMap.addEventListener("click", () => filterDestinations());
-emptyReset.addEventListener("click", () => filterDestinations());
+if (resetMap) resetMap.addEventListener("click", () => filterDestinations());
+if (emptyReset) emptyReset.addEventListener("click", () => filterDestinations());
 
 let toastTimer;
 function showToast(message) {
   clearTimeout(toastTimer);
+  if (!toast) return;
   toast.textContent = message;
   toast.classList.add("show");
   toastTimer = setTimeout(() => toast.classList.remove("show"), 2500);

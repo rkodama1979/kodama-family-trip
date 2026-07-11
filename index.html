@@ -154,7 +154,7 @@
 <p id="destination-count">8件の候補地を表示中</p>
 </div>
 <div class="destination-grid" id="destination-grid">
-<article class="destination-card" data-name="静岡" onclick="if(!event.target.closest('a,button')) location.href='pages/shizuoka.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='pages/shizuoka.html'}" role="link" tabindex="0">
+<article class="destination-card" data-name="静岡" data-region="chubu" onclick="if(!event.target.closest('a,button')) location.href='pages/shizuoka.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='pages/shizuoka.html'}" role="link" tabindex="0">
 <div class="destination-photo-grid">
 <img alt="" src="images/shizuoka/shizuoka-01-hero.png"/>
 <img alt="" src="images/shizuoka/shizuoka-06-sakuraebi.png"/>
@@ -170,7 +170,7 @@
 <a class="details-button details-link" href="pages/shizuoka.html">静岡の詳細を見る <span>→</span></a>
 </div>
 </article>
-<article class="destination-card" data-name="石川" onclick="if(!event.target.closest('a,button')) location.href='pages/ishikawa.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='pages/ishikawa.html'}" role="link" tabindex="0">
+<article class="destination-card" data-name="石川" data-region="chubu" onclick="if(!event.target.closest('a,button')) location.href='pages/ishikawa.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='pages/ishikawa.html'}" role="link" tabindex="0">
 <div aria-label="石川の写真ダイジェスト" class="destination-photo-grid">
 <img alt="兼六園" src="images/ishikawa/ishikawa-01-hero.png"/>
 <img alt="海鮮丼" src="images/ishikawa/ishikawa-06-kaisendon.png"/>
@@ -186,7 +186,7 @@
 <a class="details-button details-link" href="pages/ishikawa.html">石川の詳細を見る <span>→</span></a>
 </div>
 </article>
-<article class="destination-card" data-name="三重" onclick="if(!event.target.closest('a,button')) location.href='pages/mie.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='pages/mie.html'}" role="link" tabindex="0">
+<article class="destination-card" data-name="三重" data-region="kinki" onclick="if(!event.target.closest('a,button')) location.href='pages/mie.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='pages/mie.html'}" role="link" tabindex="0">
 <div aria-label="三重の写真ダイジェスト" class="destination-photo-grid">
 <img alt="伊勢神宮" src="images/mie/mie-01-hero.png"/>
 <img alt="松阪牛" src="images/mie/mie-05-matsusakabeef.png"/>
@@ -202,7 +202,7 @@
 <a class="details-button details-link" href="pages/mie.html">三重の詳細を見る <span>→</span></a>
 </div>
 </article>
-<article class="destination-card" data-name="岡山" onclick="if(!event.target.closest('a,button')) location.href='pages/okayama.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='pages/okayama.html'}" role="link" tabindex="0">
+<article class="destination-card" data-name="岡山" data-region="chugoku" onclick="if(!event.target.closest('a,button')) location.href='pages/okayama.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='pages/okayama.html'}" role="link" tabindex="0">
 <div aria-label="岡山の写真ダイジェスト" class="destination-photo-grid">
 <img alt="倉敷美観地区" src="images/okayama/okayama-01-hero.png"/>
 <img alt="岡山ばら寿司" src="images/okayama/okayama-05-barazushi.png"/>
@@ -218,7 +218,7 @@
 <a class="details-button details-link" href="pages/okayama.html">岡山の詳細を見る <span>→</span></a>
 </div>
 </article>
-<article class="destination-card" data-name="愛媛" onclick="if(!event.target.closest('a,button')) location.href='pages/ehime.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='pages/ehime.html'}" role="link" tabindex="0">
+<article class="destination-card" data-name="愛媛" data-region="shikoku" onclick="if(!event.target.closest('a,button')) location.href='pages/ehime.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='pages/ehime.html'}" role="link" tabindex="0">
 <div aria-label="愛媛の写真ダイジェスト" class="destination-photo-grid">
 <img alt="道後温泉本館" src="images/ehime/ehime-01-hero.png"/>
 <img alt="鯛めし" src="images/ehime/ehime-05-taimeshi.png"/>
@@ -234,7 +234,7 @@
 <a class="details-button details-link" href="pages/ehime.html">愛媛の詳細を見る <span>→</span></a>
 </div>
 </article>
-<article class="destination-card" data-name="大分" onclick="if(!event.target.closest('a,button')) location.href='pages/oita.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='pages/oita.html'}" role="link" tabindex="0">
+<article class="destination-card" data-name="大分" data-region="kyushu" onclick="if(!event.target.closest('a,button')) location.href='pages/oita.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='pages/oita.html'}" role="link" tabindex="0">
 <div aria-label="大分の写真ダイジェスト" class="destination-photo-grid"><img alt="湯布院と由布岳" src="images/oita/oita-01-hero.jpg"/><img alt="海地獄" src="images/oita/oita-02-umijigoku.jpg"/><img alt="とり天" src="images/oita/oita-05-toriten.jpg"/><img alt="りゅうきゅう丼" src="images/oita/oita-08-ryukyu.jpg"/></div>
 <div class="destination-body">
 <h3>大分</h3>
@@ -245,7 +245,7 @@
 <a class="details-button details-link" href="pages/oita.html">大分の詳細を見る <span>→</span></a>
 </div>
 </article>
-<article class="destination-card" data-name="宮崎" onclick="if(!event.target.closest('a,button')) location.href='pages/miyazaki.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='pages/miyazaki.html'}" role="link" tabindex="0">
+<article class="destination-card" data-name="宮崎" data-region="kyushu" onclick="if(!event.target.closest('a,button')) location.href='pages/miyazaki.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='pages/miyazaki.html'}" role="link" tabindex="0">
 <div aria-label="宮崎の写真ダイジェスト" class="destination-photo-grid"><img alt="高千穂峡" src="images/miyazaki/miyazaki-02-takachiho.jpg"/><img alt="鵜戸神宮" src="images/miyazaki/miyazaki-03-udo.jpg"/><img alt="チキン南蛮" src="images/miyazaki/miyazaki-06-chickennanban.jpg"/><img alt="マンゴーパフェ" src="images/miyazaki/miyazaki-09-mango.jpg"/></div>
 <div class="destination-body">
 <h3>宮崎</h3>
@@ -256,7 +256,7 @@
 <a class="details-button details-link" href="pages/miyazaki.html">宮崎の詳細を見る <span>→</span></a>
 </div>
 </article>
-<article class="destination-card" data-name="鹿児島" onclick="if(!event.target.closest('a,button')) location.href='pages/kagoshima.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='pages/kagoshima.html'}" role="link" tabindex="0">
+<article class="destination-card" data-name="鹿児島" data-region="kyushu" onclick="if(!event.target.closest('a,button')) location.href='pages/kagoshima.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='pages/kagoshima.html'}" role="link" tabindex="0">
 <div aria-label="鹿児島の写真ダイジェスト" class="destination-photo-grid"><img alt="桜島" src="images/kagoshima/kagoshima-01-hero.jpeg"/><img alt="霧島神宮" src="images/kagoshima/kagoshima-02-kirishima.jpg"/><img alt="黒豚とんかつ" src="images/kagoshima/kagoshima-05-kurobuta.jpg"/><img alt="白熊" src="images/kagoshima/kagoshima-08-shirokuma.webp"/></div>
 <div class="destination-body">
 <h3>鹿児島</h3>
