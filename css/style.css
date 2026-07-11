@@ -2129,3 +2129,44 @@ p, li, dd {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Ehime photo edition */
+.ehime-photo-hero {
+  background-image:
+    linear-gradient(90deg, rgba(35, 48, 43, .58), rgba(35, 48, 43, .08)),
+    url("../images/ehime/ehime-01-hero.png");
+  background-size: cover;
+  background-position: center 50%;
+}
+.ehime-photo-hero::before,
+.ehime-photo-hero::after {
+  display: none;
+}
+.ehime-photo-hero .detail-hero-inner {
+  position: relative;
+  z-index: 2;
+}
+.ehime-photo-hero h1,
+.ehime-photo-hero .detail-hero-lead,
+.ehime-photo-hero .breadcrumb,
+.ehime-photo-hero .breadcrumb a {
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,.35);
+}
+.ehime-feature-grid,
+.ehime-food-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.destination-photo-grid .destination-label {
+  display: none !important;
+}
+@media (max-width: 760px) {
+  .ehime-photo-hero {
+    background-position: 52% center;
+  }
+  .ehime-feature-grid,
+  .ehime-food-grid {
+    grid-template-columns: 1fr;
+  }
+}
