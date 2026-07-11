@@ -2170,3 +2170,29 @@ p, li, dd {
     grid-template-columns: 1fr;
   }
 }
+
+/* Oita photo edition */
+.oita-photo-hero {
+  background-image:
+    linear-gradient(90deg, rgba(29, 48, 43, .62), rgba(29, 48, 43, .08)),
+    url("../images/oita/oita-01-hero.jpg");
+  background-size: cover;
+  background-position: center 52%;
+}
+.oita-photo-hero::before,
+.oita-photo-hero::after { display: none; }
+.oita-photo-hero .detail-hero-inner { position: relative; z-index: 2; }
+.oita-photo-hero h1,
+.oita-photo-hero .detail-hero-lead,
+.oita-photo-hero .breadcrumb,
+.oita-photo-hero .breadcrumb a {
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,.36);
+}
+.oita-feature-grid,
+.oita-food-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 760px) {
+  .oita-photo-hero { background-position: 46% center; }
+  .oita-feature-grid,
+  .oita-food-grid { grid-template-columns: 1fr; }
+}
