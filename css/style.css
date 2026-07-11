@@ -2356,3 +2356,50 @@ p, li, dd {
 @media (prefers-reduced-motion: reduce) {
   .hero-panel-cover .hero-panel img { transition: none; }
 }
+
+/* v1.2 top cover: one-time fade-in on PC and mobile */
+.hero-panel-cover .hero-panel {
+  opacity: 0;
+  animation: topPanelFade .62s ease-out forwards;
+}
+.hero-panel-cover .hero-panel:nth-child(1) { animation-delay: .05s; }
+.hero-panel-cover .hero-panel:nth-child(2) { animation-delay: .12s; }
+.hero-panel-cover .hero-panel:nth-child(3) { animation-delay: .19s; }
+.hero-panel-cover .hero-panel:nth-child(4) { animation-delay: .26s; }
+.hero-panel-cover .hero-panel:nth-child(5) { animation-delay: .33s; }
+.hero-panel-cover .hero-panel:nth-child(6) { animation-delay: .40s; }
+.hero-panel-cover .hero-panel:nth-child(7) { animation-delay: .47s; }
+.hero-panel-cover .hero-panel:nth-child(8) { animation-delay: .54s; }
+.hero-panel-cover .hero-copy {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: topTitleFade .72s ease-out .78s forwards;
+}
+.hero-panel-cover .hero-panel img {
+  transition: none;
+}
+.hero-panel-cover .hero-copy h1 {
+  max-width: 880px;
+}
+@keyframes topPanelFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes topTitleFade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (hover:hover) and (pointer:fine) {
+  .hero-panel-cover .hero-panel:hover img {
+    transform: scale(1.01);
+    filter: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-panel-cover .hero-panel,
+  .hero-panel-cover .hero-copy {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
