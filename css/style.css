@@ -1985,3 +1985,20 @@ h1,h2,h3,h4,.brand-name,.brand-subtitle,.destination-label,
   outline: 3px solid rgba(79, 167, 160, .45);
   outline-offset: 3px;
 }
+
+/* Pop typography refinement */
+h1{
+  font-family:'M PLUS Rounded 1c',sans-serif;
+  font-weight:800;
+  letter-spacing:.04em;
+}
+h2,h3,h4{
+  font-family:'M PLUS Rounded 1c',sans-serif;
+  font-weight:700;
+  letter-spacing:.02em;
+}
+p,li,span,.lead,.description,.destination-card p{
+  font-family:'Noto Sans JP',sans-serif;
+  font-weight:500;
+  line-height:1.9;
+}
