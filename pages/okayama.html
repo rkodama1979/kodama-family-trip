@@ -7,24 +7,6 @@
   <meta name="theme-color" content="#a66a4f">
   <title>岡山｜2027年 コダマ家 旅行計画</title>
   <link rel="stylesheet" href="../css/style.css">
-  <style>
-    .detail-hero.okayama {
-      background: linear-gradient(145deg,#edd6ad 0%,#c58d63 48%,#7b5847 100%);
-    }
-    .detail-hero.okayama::before {
-      width: 72%;
-      height: 52%;
-      right: -8%;
-      bottom: 15%;
-      background: linear-gradient(145deg,#8ea8a0,#d8c08f);
-      clip-path: polygon(0 56%,14% 34%,29% 54%,44% 28%,60% 57%,76% 37%,90% 55%,100% 42%,100% 100%,0 100%);
-    }
-    .detail-hero.okayama::after {
-      background:
-        repeating-linear-gradient(170deg,rgba(255,255,255,.18) 0 2px,transparent 2px 18px),
-        #6d8f93;
-    }
-  </style>
 </head>
 <body class="detail-page">
   <header class="site-header">
@@ -38,7 +20,7 @@
   </header>
 
   <main>
-    <section class="detail-hero okayama">
+    <section class="detail-hero okayama-photo-hero">
       <div class="detail-hero-inner">
         <p class="breadcrumb"><a href="../index.html">トップ</a> ／ 旅行候補 ／ 岡山</p>
         <h1>岡山</h1>
@@ -70,10 +52,9 @@
           <article class="story-card">
             <h3>町並み、瀬戸内海、果物。<br>岡山らしさを幅広く楽しむ旅。</h3>
             <p>
-              岡山桃太郎空港でレンタカーを受け取り、初日は倉敷へ。
-              2日目は児島・鷲羽山で瀬戸大橋と瀬戸内海の景色を楽しみ、
-              3日目は牛窓または岡山市内へ向かいます。
-              観光地をしっかり巡りつつ、移動は車中心で組み立てます。
+              岡山桃太郎空港でレンタカーを受け取り、倉敷美観地区へ。
+              後楽園や吉備津神社、鷲羽山をめぐり、町並み・庭園・瀬戸内海の景色を楽しみます。
+              ばら寿司、えびめし、デミカツ丼、桃パフェも各日の行程に組み込みます。
             </p>
           </article>
           <aside class="info-card">
@@ -92,30 +73,25 @@
     <section class="detail-section" id="scenery">
       <div class="detail-inner">
         <div class="detail-heading">
-          <h2>見たい景色と町並み</h2>
-          <p>倉敷の白壁と柳並木、瀬戸大橋、穏やかな瀬戸内海を楽しみます。</p>
+          <h2>見たい景色と立ち寄り先</h2>
+          <p>倉敷の町並み、日本庭園、歴史ある回廊、瀬戸内海の眺望を楽しみます。</p>
         </div>
-        <div class="feature-grid">
+        <div class="feature-grid okayama-feature-grid">
           <article class="feature-card">
-            <div class="feature-art art-city"><span>白壁・柳並木・倉敷川</span></div>
-            <div class="card-copy">
-              <h3>倉敷美観地区</h3>
-              <p>白壁の蔵屋敷や町家、倉敷川沿いの景観が続く岡山を代表する観光地。カフェやショップもまとめて楽しめます。</p>
-            </div>
+            <img class="card-photo" src="../images/okayama/okayama-01-hero.png" alt="倉敷美観地区" loading="lazy">
+            <div class="card-copy"><h3>倉敷美観地区</h3><p>白壁の町家と倉敷川、柳並木が続く、岡山を代表する歴史的な町並みです。</p></div>
           </article>
           <article class="feature-card">
-            <div class="feature-art art-sea"><span>瀬戸大橋と多島美</span></div>
-            <div class="card-copy">
-              <h3>鷲羽山展望台</h3>
-              <p>瀬戸内海の島々と瀬戸大橋、対岸の四国まで見渡せる代表的な展望スポットです。</p>
-            </div>
+            <img class="card-photo" src="../images/okayama/okayama-02-korakuen.png" alt="岡山後楽園と岡山城" loading="lazy">
+            <div class="card-copy"><h3>岡山後楽園</h3><p>広い芝生と池、季節の花木を楽しめる日本三名園のひとつ。園内から岡山城も望めます。</p></div>
           </article>
           <article class="feature-card">
-            <div class="feature-art" style="background:linear-gradient(145deg,#b9d3c6,#5d8576)"><span>海辺・オリーブ・島景色</span></div>
-            <div class="card-copy">
-              <h3>牛窓</h3>
-              <p>穏やかな瀬戸内海と島々を望む海辺の町。オリーブ園や海沿いドライブを組み合わせます。</p>
-            </div>
+            <img class="card-photo" src="../images/okayama/okayama-03-kibitsujinja.png" alt="吉備津神社の長い回廊" loading="lazy">
+            <div class="card-copy"><h3>吉備津神社</h3><p>山の斜面に沿って続く長い回廊が印象的な、吉備の歴史を感じる神社です。</p></div>
+          </article>
+          <article class="feature-card">
+            <img class="card-photo" src="../images/okayama/okayama-04-washuzan.png" alt="鷲羽山から望む瀬戸大橋" loading="lazy">
+            <div class="card-copy"><h3>鷲羽山展望台</h3><p>瀬戸内海に浮かぶ島々と瀬戸大橋を一望できる、岡山を代表する展望スポットです。</p></div>
           </article>
         </div>
       </div>
@@ -125,50 +101,24 @@
       <div class="detail-inner">
         <div class="detail-heading">
           <h2>食べたいグルメ一覧</h2>
-          <p>郷土料理、B級グルメ、岡山らしい果物スイーツまで。</p>
+          <p>華やかな郷土料理、岡山の洋食、ご当地丼、果物スイーツを味わいます。</p>
         </div>
-        <div class="food-grid">
+        <div class="food-grid okayama-food-grid">
           <article class="food-card">
-            <div class="food-art"><span>岡山の郷土料理</span></div>
-            <div class="card-copy">
-              <h3>岡山ばら寿司</h3>
-              <p>魚介や野菜を彩りよく盛り付ける、岡山を代表する華やかな郷土料理。</p>
-            </div>
+            <img class="card-photo" src="../images/okayama/okayama-05-barazushi.png" alt="岡山ばら寿司" loading="lazy">
+            <div class="card-copy"><h3>岡山ばら寿司</h3><p>魚介や野菜を彩りよく盛り付ける、岡山を代表する華やかな郷土料理です。</p></div>
           </article>
           <article class="food-card">
-            <div class="food-art"><span>岡山のB級グルメ</span></div>
-            <div class="card-copy">
-              <h3>えびめし</h3>
-              <p>黒褐色のソースで炒めたご飯にえびを合わせる、岡山らしい洋食メニュー。</p>
-            </div>
+            <img class="card-photo" src="../images/okayama/okayama-06-ebimeshi.png" alt="えびめし" loading="lazy">
+            <div class="card-copy"><h3>えびめし</h3><p>黒褐色のソースで炒めたご飯にえびを合わせる、岡山ならではの洋食メニューです。</p></div>
           </article>
           <article class="food-card">
-            <div class="food-art food-green"><span>濃厚なご当地丼</span></div>
-            <div class="card-copy">
-              <h3>デミカツ丼</h3>
-              <p>カツにデミグラスソースをかけた岡山市の定番ご当地グルメ。</p>
-            </div>
+            <img class="card-photo" src="../images/okayama/okayama-07-demikatsudon.png" alt="デミカツ丼" loading="lazy">
+            <div class="card-copy"><h3>デミカツ丼</h3><p>カツと千切りキャベツにデミグラスソースを合わせる、岡山市の定番グルメです。</p></div>
           </article>
           <article class="food-card">
-            <div class="food-art food-pink"><span>倉敷の食べ歩き</span></div>
-            <div class="card-copy">
-              <h3>倉敷スイーツ</h3>
-              <p>町家カフェ、プリン、ソフトクリームなどを美観地区の休憩に組み込みます。</p>
-            </div>
-          </article>
-          <article class="food-card">
-            <div class="food-art food-pink"><span>果物王国の甘味</span></div>
-            <div class="card-copy">
-              <h3>桃・ぶどうスイーツ</h3>
-              <p>旅行時期の提供内容を確認し、パフェ、ゼリー、焼き菓子などから選びます。</p>
-            </div>
-          </article>
-          <article class="food-card">
-            <div class="food-art food-green"><span>瀬戸内の魚介</span></div>
-            <div class="card-copy">
-              <h3>海鮮料理</h3>
-              <p>児島・下津井・牛窓周辺で、瀬戸内の魚介を使った昼食を候補にします。</p>
-            </div>
+            <img class="card-photo" src="../images/okayama/okayama-08-peachparfait.png" alt="桃パフェ" loading="lazy">
+            <div class="card-copy"><h3>桃パフェ</h3><p>岡山産の桃を主役にした、果物王国らしい華やかなデザートです。</p></div>
           </article>
         </div>
       </div>
@@ -204,37 +154,31 @@
       <div class="detail-inner">
         <div class="detail-heading">
           <h2>2泊3日モデルコース</h2>
-          <p>倉敷・瀬戸大橋・牛窓を車でつなぎ、景色と食をしっかり盛り込みます。</p>
+          <p>倉敷、岡山市、児島をつなぎ、景色とご当地グルメを各日に組み込みます。</p>
         </div>
         <ol class="route-list">
           <li>
             <span class="route-day">1日</span>
             <div class="route-content">
-              <h3>空港から倉敷美観地区へ</h3>
-              <p>岡山桃太郎空港でレンタカーを受け取り、倉敷へ。美観地区、倉敷川沿い、アイビースクエア周辺を巡り、町家カフェにも立ち寄ります。</p>
-              <div class="route-stops">
-                <span>岡山桃太郎空港</span><span>倉敷美観地区</span><span>大原美術館周辺</span><span>倉敷泊</span>
-              </div>
+              <h3>倉敷美観地区と町家の風景</h3>
+              <p>岡山桃太郎空港でレンタカーを受け取り、倉敷美観地区へ。倉敷川沿いの町並みや大原美術館周辺を巡り、町家カフェにも立ち寄ります。</p>
+              <div class="route-stops"><span>岡山桃太郎空港</span><span>倉敷美観地区</span><span>大原美術館周辺</span><span>倉敷泊</span></div>
             </div>
           </li>
           <li>
             <span class="route-day">2日</span>
             <div class="route-content">
-              <h3>児島と瀬戸大橋の絶景</h3>
-              <p>児島方面へ移動し、鷲羽山展望台から瀬戸大橋と島々を眺めます。下津井や児島で海鮮やご当地グルメを楽しみ、夕方は岡山市内または牛窓へ。</p>
-              <div class="route-stops">
-                <span>児島</span><span>鷲羽山展望台</span><span>瀬戸大橋</span><span>下津井</span><span>岡山または牛窓泊</span>
-              </div>
+              <h3>後楽園・吉備津神社・岡山グルメ</h3>
+              <p>岡山後楽園と吉備津神社を訪れ、庭園と歴史ある建築を楽しみます。昼食や夕食には、ばら寿司、えびめし、デミカツ丼から選びます。</p>
+              <div class="route-stops"><span>岡山後楽園</span><span>岡山城周辺</span><span>吉備津神社</span><span>岡山市内泊</span></div>
             </div>
           </li>
           <li>
             <span class="route-day">3日</span>
             <div class="route-content">
-              <h3>牛窓と岡山グルメ</h3>
-              <p>牛窓の海辺とオリーブ園を巡り、瀬戸内の景色を満喫。岡山市内でデミカツ丼やえびめしを楽しみ、空港へ戻ります。</p>
-              <div class="route-stops">
-                <span>牛窓</span><span>オリーブ園</span><span>岡山市内</span><span>ご当地グルメ</span><span>空港返却</span>
-              </div>
+              <h3>鷲羽山と瀬戸大橋</h3>
+              <p>児島方面へ移動し、鷲羽山から瀬戸大橋と島々を眺めます。岡山市内へ戻り、桃パフェやお土産を楽しんで空港へ向かいます。</p>
+              <div class="route-stops"><span>児島</span><span>鷲羽山展望台</span><span>桃パフェ</span><span>岡山桃太郎空港</span></div>
             </div>
           </li>
         </ol>
