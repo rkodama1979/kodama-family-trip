@@ -7,23 +7,7 @@
   <meta name="theme-color" content="#596c68">
   <title>石川｜2027年 コダマ家 旅行計画</title>
 <link rel="stylesheet" href="../css/style.css">
-  <style>
-    .detail-hero.ishikawa {
-      background: linear-gradient(145deg,#c9d2ca 0%,#748a83 48%,#394c49 100%);
-    }
-    .detail-hero.ishikawa::before {
-      width: 70%; height: 55%; right: -8%; bottom: 16%;
-      background:
-        linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,0)),
-        linear-gradient(145deg,#48655f,#9eb0a9);
-      clip-path: polygon(0 45%,12% 25%,24% 48%,39% 16%,55% 51%,72% 23%,88% 48%,100% 28%,100% 100%,0 100%);
-    }
-    .detail-hero.ishikawa::after {
-      background:
-        repeating-linear-gradient(170deg,rgba(255,255,255,.18) 0 2px,transparent 2px 18px),
-        #4d6965;
-    }
-  </style>
+  
 </head>
 <body class="detail-page">
   <header class="site-header">
@@ -37,7 +21,7 @@
   </header>
 
   <main>
-    <section class="detail-hero ishikawa">
+    <section class="detail-hero ishikawa-photo-hero">
       <div class="detail-hero-inner">
         <p class="breadcrumb"><a href="../index.html">トップ</a> ／ 旅行候補 ／ 石川</p>
         <h1>石川</h1>
@@ -90,30 +74,25 @@
     <section class="detail-section" id="scenery">
       <div class="detail-inner">
         <div class="detail-heading">
-<h2>見たい景色と町並み</h2>
-          <p>長時間の街歩きを避け、代表的な場所を絞って楽しみます。</p>
+          <h2>見たい景色と町並み</h2>
+          <p>庭園、海沿いの道、棚田、歴史ある町並みを楽しみます。</p>
         </div>
-        <div class="feature-grid">
+        <div class="feature-grid ishikawa-feature-grid">
           <article class="feature-card">
-            <div class="feature-art" style="background:linear-gradient(145deg,#a9c1a4,#4f745c)"><span>池・松・曲水・春の庭園</span></div>
-            <div class="card-copy">
-              <h3>兼六園</h3>
-              <p>日本三名園のひとつ。園内は広いため、霞ヶ池や徽軫灯籠など主要な見どころを中心に巡ります。</p>
-            </div>
+            <img class="card-photo" src="../images/ishikawa/ishikawa-01-hero.png" alt="兼六園の庭園と池" loading="lazy">
+            <div class="card-copy"><h3>兼六園</h3><p>日本三名園のひとつ。霞ヶ池や徽軫灯籠など、代表的な見どころを中心に巡ります。</p></div>
           </article>
           <article class="feature-card">
-            <div class="feature-art art-city"><span>格子戸と茶屋建築</span></div>
-            <div class="card-copy">
-              <h3>ひがし茶屋街</h3>
-              <p>伝統的な町家が並ぶ金沢らしい景観。町家カフェや金箔スイーツも一緒に楽しめます。</p>
-            </div>
+            <img class="card-photo" src="../images/ishikawa/ishikawa-02-higashichaya.png" alt="夕暮れのひがし茶屋街" loading="lazy">
+            <div class="card-copy"><h3>ひがし茶屋街</h3><p>格子戸の町家が並ぶ金沢らしい風景。夕方の灯りも美しいエリアです。</p></div>
           </article>
           <article class="feature-card">
-            <div class="feature-art art-waterfall"><span>渓谷と温泉街</span></div>
-            <div class="card-copy">
-              <h3>加賀温泉郷</h3>
-              <p>山代・山中・片山津などから宿を選択。観光を詰め込まず、温泉で休める時間を確保します。</p>
-            </div>
+            <img class="card-photo" src="../images/ishikawa/ishikawa-03-chirihama.png" alt="千里浜なぎさドライブウェイ" loading="lazy">
+            <div class="card-copy"><h3>千里浜なぎさドライブウェイ</h3><p>波打ち際を車で走れる、石川ならではの爽快なドライブスポットです。</p></div>
+          </article>
+          <article class="feature-card">
+            <img class="card-photo" src="../images/ishikawa/ishikawa-04-senmaida.png" alt="夕日の白米千枚田" loading="lazy">
+            <div class="card-copy"><h3>白米千枚田</h3><p>海へ続くように広がる棚田。夕日の時間帯には水面が黄金色に輝きます。</p></div>
           </article>
         </div>
       </div>
@@ -122,16 +101,26 @@
     <section class="detail-section" id="food">
       <div class="detail-inner">
         <div class="detail-heading">
-<h2>食べたいグルメ一覧</h2>
-          <p>海鮮、郷土料理、B級グルメ、金沢らしい甘味まで。</p>
+          <h2>食べたいグルメ一覧</h2>
+          <p>日本海の海鮮、金沢のB級グルメ、見た目も華やかな甘味まで。</p>
         </div>
-        <div class="food-grid">
-          <article class="food-card"><div class="food-art"><span>市場の楽しみ</span></div><div class="card-copy"><h3>海鮮丼・寿司</h3><p>近江町市場や金沢市内で、旬の魚介を楽しみます。</p></div></article>
-          <article class="food-card"><div class="food-art"><span>加賀の郷土料理</span></div><div class="card-copy"><h3>治部煮</h3><p>鴨肉や鶏肉、すだれ麩、野菜を煮た金沢を代表する料理。</p></div></article>
-          <article class="food-card"><div class="food-art food-green"><span>金沢のB級グルメ</span></div><div class="card-copy"><h3>金沢カレー</h3><p>濃厚なルー、千切りキャベツ、カツを楽しむご当地カレー。</p></div></article>
-          <article class="food-card"><div class="food-art food-pink"><span>茶屋街の定番</span></div><div class="card-copy"><h3>金箔ソフト</h3><p>ひがし茶屋街や兼六園周辺で、金沢らしい見た目も楽しめる甘味。</p></div></article>
-          <article class="food-card"><div class="food-art food-green"><span>上品な甘味</span></div><div class="card-copy"><h3>和菓子と抹茶</h3><p>町家カフェや茶店で休憩を兼ねて楽しみます。</p></div></article>
-          <article class="food-card"><div class="food-art food-pink"><span>加賀の名物</span></div><div class="card-copy"><h3>加賀棒茶スイーツ</h3><p>香ばしい棒茶を使ったプリン、ソフト、焼き菓子などを候補にします。</p></div></article>
+        <div class="food-grid ishikawa-food-grid">
+          <article class="food-card">
+            <img class="card-photo" src="../images/ishikawa/ishikawa-06-kaisendon.png" alt="海鮮丼" loading="lazy">
+            <div class="card-copy"><h3>海鮮丼</h3><p>近江町市場などで、新鮮な魚介を一度に楽しめる石川旅の主役です。</p></div>
+          </article>
+          <article class="food-card">
+            <img class="card-photo" src="../images/ishikawa/ishikawa-07-kanazawacurry.png" alt="金沢カレー" loading="lazy">
+            <div class="card-copy"><h3>金沢カレー</h3><p>濃厚なルー、カツ、千切りキャベツを合わせた食べ応えのある名物。</p></div>
+          </article>
+          <article class="food-card">
+            <img class="card-photo" src="../images/ishikawa/ishikawa-08-nodoguro.png" alt="のどぐろの刺身と炙り" loading="lazy">
+            <div class="card-copy"><h3>のどぐろ</h3><p>脂ののった白身を、刺身や炙り、焼き物で味わいたい石川のごちそうです。</p></div>
+          </article>
+          <article class="food-card">
+            <img class="card-photo" src="../images/ishikawa/ishikawa-09-goldsoft.png" alt="金箔ソフトクリーム" loading="lazy">
+            <div class="card-copy"><h3>金箔ソフト</h3><p>金沢らしい華やかさを楽しめる、写真映えする定番スイーツです。</p></div>
+          </article>
         </div>
       </div>
     </section>
