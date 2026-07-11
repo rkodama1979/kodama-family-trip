@@ -1975,3 +1975,13 @@ h1,h2,h3,h4,.brand-name,.brand-subtitle,.destination-label,
     font-size: .88rem;
   }
 }
+
+
+/* Reliable clickable destination cards */
+.destination-card[role="link"] {
+  cursor: pointer;
+}
+.destination-card[role="link"]:focus-visible {
+  outline: 3px solid rgba(79, 167, 160, .45);
+  outline-offset: 3px;
+}
